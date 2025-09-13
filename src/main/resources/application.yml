@@ -8,6 +8,9 @@ spring:
     url: jdbc:mysql://localhost:3306/w_ai_code_mother
     username: root
     password: 123456
+  profiles:
+    # 生效配置【读取application-loca.yml中的配置】
+    active: local
 
 server:
   port: 8123
