@@ -1,5 +1,7 @@
 package com.wjp.waicodemotherbackend.ai;
 
+import com.wjp.waicodemotherbackend.ai.model.HtmlCodeResult;
+import com.wjp.waicodemotherbackend.ai.model.MultiFileCodeResult;
 import dev.langchain4j.service.SystemMessage;
 
 /**
@@ -13,7 +15,7 @@ public interface AiCodeGeneratorService {
      * @return AI 的输出结果
      */
     @SystemMessage("prompt/codegen-html-system-prompt.txt") // 系统提示词
-    String generateHtmlCode(String userMessage);
+    HtmlCodeResult generateHtmlCode(String userMessage);
 
     /**
      * 生成 多文件 代码
@@ -21,6 +23,6 @@ public interface AiCodeGeneratorService {
      * @return AI 的输出结果
      */
     @SystemMessage("prompt/codegen-multi-file-system-prompt.txt") // 系统提示词
-    String generateMultiFileCode(String userMessage);
+    MultiFileCodeResult generateMultiFileCode(String userMessage);
 
 }
