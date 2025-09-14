@@ -4,6 +4,8 @@ import com.wjp.waicodemotherbackend.ai.model.HtmlCodeResult;
 import com.wjp.waicodemotherbackend.ai.model.MultiFileCodeResult;
 import dev.langchain4j.service.SystemMessage;
 
+import java.io.File;
+
 /**
  * AI Service 服务
  */
